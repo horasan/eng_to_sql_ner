@@ -1,0 +1,221 @@
+{
+    "Query_1": { 
+        "templates": [
+            "Show me all {DEAL_TYPE} deals where value date is {VALUE_DATE}",
+            "Get the {DEAL_TYPE} transactions that have a value date on {VALUE_DATE}",
+            "List all deals of type {DEAL_TYPE} with the value date set to {VALUE_DATE}",
+            "Fetch {DEAL_TYPE} deals happening {VALUE_DATE}",
+            "Find {DEAL_TYPE} trades where settlement date equals {VALUE_DATE}",
+            "Retrieve {DEAL_TYPE} deals scheduled for {VALUE_DATE}",
+            "Can you list {DEAL_TYPE} trades dated {VALUE_DATE}?",
+            "Give me all the {DEAL_TYPE} transactions with a value date of {VALUE_DATE}",
+            "Show {DEAL_TYPE} contracts whose settlement is on {VALUE_DATE}",
+            "Display {DEAL_TYPE} deals that occur on {VALUE_DATE}",
+            "I need a list of {DEAL_TYPE} deals set for {VALUE_DATE}",
+            "Which {DEAL_TYPE} transactions are booked on {VALUE_DATE}",
+            "Fetch all {DEAL_TYPE} trades with the date {VALUE_DATE}",
+            "Provide all deals of type {DEAL_TYPE} happening on {VALUE_DATE}",
+            "Return {DEAL_TYPE} trades with value date equal to {VALUE_DATE}",
+            "Can you get me the {DEAL_TYPE} transactions for {VALUE_DATE}",
+            "Look up {DEAL_TYPE} deals scheduled on {VALUE_DATE}",
+            "List {DEAL_TYPE} trades taking place on {VALUE_DATE}",
+            "Give all {DEAL_TYPE} contracts that have a settlement date of {VALUE_DATE}",
+            "Pull {DEAL_TYPE} deals occurring on {VALUE_DATE}",
+            "Identify {DEAL_TYPE} deals with a value date of {VALUE_DATE}",
+            "I want {DEAL_TYPE} transactions set to {VALUE_DATE}",
+            "Retrieve all {DEAL_TYPE} trades due on {VALUE_DATE}",
+            "Filter {DEAL_TYPE} deals based on value date {VALUE_DATE}",
+            "Get every {DEAL_TYPE} trade dated {VALUE_DATE}"
+        ],
+        "params": {
+            "DEAL_TYPE": ["FX", "MM", "Equity", "Derivative", "Bond", "Loan", "Repo", "CDS", "IRS", "Futures", "Options"],
+            "VALUE_DATE": ["today", "yesterday", "last week", "next month", "2025-06-01","today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"]
+        }
+    },
+    "Query_2": {
+        "templates": [
+            "Show all deals with counterparty {COUNTERPARTY_NAME}",
+            "Get transactions involving {COUNTERPARTY_NAME}",
+            "List all deals where the counterparty is {COUNTERPARTY_NAME}",
+            "Fetch trades with {COUNTERPARTY_NAME} as counterparty",
+            "Find deals linked to {COUNTERPARTY_NAME}"
+        ],
+        "params": {
+            "COUNTERPARTY_NAME": ["ABC Bank", "XYZ Corp", "Bank of America", "ING", "Deutsche Bank"]
+        }
+    },
+    "Query_3": {
+        "templates": [
+            "Show all deals in {CURRENCY}",
+            "Get transactions where the deal currency is {CURRENCY}",
+            "List deals denominated in {CURRENCY}",
+            "Fetch {DEAL_TYPE} deals for {CURRENCY} currency",
+            "Find all trades with currency {CURRENCY}"
+        ],
+        "params": {
+            "CURRENCY": ["USD", "EUR", "JPY", "GBP", "CHF", "AUD", "TRY"],
+            "DEAL_TYPE": ["FX", "MM", "Equity", "Derivative", "Bond", "Loan", "Repo", "CDS", "IRS", "Futures", "Options"]
+        }
+    },
+    "Query_4": {
+        "templates": [
+            "Show deals where the amount is greater than {AMOUNT}",
+            "List all trades with value less than {AMOUNT}",
+            "Get transactions with amounts between {AMOUNT_LOW} and {AMOUNT_HIGH}",
+            "Fetch deals exceeding {AMOUNT} in value",
+            "Find trades with deal size over {AMOUNT}"
+        ],
+        "params": {
+            "AMOUNT": ["100000", "500000", "1000000", "250000", "750000", "200000", "300000", "400000", "600000"],
+            "AMOUNT_LOW": ["100000", "500000", "1000000", "250000", "750000", "200000", "300000", "400000", "600000"],
+            "AMOUNT_HIGH": ["100000", "500000", "1000000", "250000", "750000", "200000", "300000", "400000", "600000"]
+        }
+    },
+    "Query_5": {
+        "templates": [
+            "Show all {DEAL_TYPE} deals with status {STATUS}",
+            "List transactions where the deal status is {STATUS}",
+            "Get deals currently marked as {STATUS}",
+            "Fetch {DEAL_TYPE} trades having status {STATUS}",
+            "Find deals that are {STATUS}"
+        ],
+        "params": {
+            "DEAL_TYPE": ["FX", "MM", "Equity", "Derivative", "Bond", "Loan", "Repo", "CDS", "IRS", "Futures", "Options"],
+            "STATUS": ["settled", "pending", "cancelled", "rejected", "approved"]
+        }
+    },
+    "Query_6": {
+        "templates": [
+            "Show deals with value date between {START_DATE} and {END_DATE}",
+            "Get all trades settled in the last {NUMBER} days",
+            "List deals for the period from {START_DATE} to {END_DATE}",
+            "Fetch transactions occurring within {START_DATE} and {END_DATE}",
+            "Find deals with settlement dates in {MONTH}"
+        ],
+        "params": {
+            "START_DATE": ["today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"],
+            "END_DATE": ["today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"],
+            "NUMBER": ["7", "30", "60", "90", "180", "365","17", "32", "62", "92", "182", "311"],
+            "MONTH": ["May", "June"]
+        }
+    },
+    "Query_7": {
+        "templates": [
+            "Show all deals in portfolio {PORTFOLIO_NAME}",
+            "List transactions under book {BOOK_ID}",
+            "Get deals linked to portfolio {PORTFOLIO_NAME}",
+            "Fetch trades associated with book {BOOK_ID}",
+            "Find deals managed under portfolio {PORTFOLIO_NAME}"
+        ],
+        "params": {
+            "PORTFOLIO_NAME": ["Treasury Alpha", "Hedge Fund", "Growth Portfolio"],
+            "BOOK_ID": ["B001", "BK-23", "BK-45"]
+        }
+    },
+    "Query_8": {
+        "templates": [
+            "Show {DEAL_TYPE} deals for {COUNTERPARTY_NAME} where value date is {VALUE_DATE}",
+            "Get trades in {CURRENCY} currency with amount greater than {AMOUNT}",
+            "List deals with status {STATUS} and value date between {START_DATE} and {END_DATE}",
+            "Fetch {DEAL_TYPE} transactions for portfolio {PORTFOLIO_NAME} occurring today",
+            "Find trades for counterparty {COUNTERPARTY_NAME} settled last week with amount over {AMOUNT}"
+        ],
+        "params": {
+            "DEAL_TYPE": ["FX", "MM", "Equity", "Derivative", "Bond", "Loan", "Repo", "CDS", "IRS", "Futures", "Options"],
+            "COUNTERPARTY_NAME": ["ABC Bank", "XYZ Corp", "Bank of America", "ING", "Deutsche Bank"],
+            "VALUE_DATE": ["today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"],
+            "CURRENCY": ["USD", "EUR", "JPY", "GBP", "CHF", "AUD", "TRY"],    
+            "AMOUNT": ["100000", "500000", "1000000", "250000", "750000"],
+            "STATUS": ["settled", "pending", "cancelled", "rejected", "approved"],
+            "START_DATE": ["today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"],
+            "END_DATE": ["today", "last week", "2025-06-01", "2025-05-15", "2025-05-01", "2025-06-15"],
+            "PORTFOLIO_NAME": ["Treasury Alpha", "Hedge Fund", "Growth Portfolio", "Global Equity Fund", "Fixed Income Portfolio"]
+        }
+    },
+     "Query_9": {
+    "templates": [
+        "List {DEAL_TYPE} trades for {CUSTOMER_NAME} in {CURRENCY} over {AMOUNT} executed on {DEAL_DATE} and approved on {APPROVE_DATE} by {DEALER_NAME} with {BUY_SELL_CODE} code",
+        "Fetch {DEAL_TYPE} transactions handled by {DEALER_NAME} for {CUSTOMER_NAME} in {CURRENCY} amounting to {AMOUNT}, dealt on {DEAL_DATE}, approved on {APPROVE_DATE} and marked as {BUY_SELL_CODE}",
+        "Show {DEAL_TYPE} deals with {BUY_SELL_CODE} code for {CUSTOMER_NAME} in {CURRENCY}, approved {APPROVE_DATE}, executed on {DEAL_DATE} by {DEALER_NAME} above {AMOUNT}",
+        "Get {DEAL_TYPE} trades executed by {DEALER_NAME} for {CUSTOMER_NAME} in {CURRENCY} currency, deal date {DEAL_DATE}, approved on {APPROVE_DATE}, amount over {AMOUNT}, code {BUY_SELL_CODE}",
+        "Retrieve trades of type {DEAL_TYPE} done by {DEALER_NAME} for {CUSTOMER_NAME} on {DEAL_DATE}, with approval on {APPROVE_DATE}, amounting to {AMOUNT} in {CURRENCY}, marked as {BUY_SELL_CODE}",
+        "Find {BUY_SELL_CODE} {DEAL_TYPE} deals in {CURRENCY} of {AMOUNT} for {CUSTOMER_NAME}, handled by {DEALER_NAME} on {DEAL_DATE}, approved {APPROVE_DATE}",
+        "Show trades of {DEAL_TYPE} with amount {AMOUNT} in {CURRENCY}, executed on {DEAL_DATE}, approved {APPROVE_DATE}, by dealer {DEALER_NAME} for {CUSTOMER_NAME} as {BUY_SELL_CODE}",
+        "Pull data for {DEAL_TYPE} transactions above {AMOUNT} in {CURRENCY}, by {DEALER_NAME}, deal date {DEAL_DATE}, approve date {APPROVE_DATE}, client {CUSTOMER_NAME}, side {BUY_SELL_CODE}",
+        "Give me all {BUY_SELL_CODE} {DEAL_TYPE} trades executed on {DEAL_DATE}, approved on {APPROVE_DATE}, by {DEALER_NAME} for {CUSTOMER_NAME} in {CURRENCY}, with amount {AMOUNT}",
+        "List all trades for {CUSTOMER_NAME} of type {DEAL_TYPE}, amounting {AMOUNT} in {CURRENCY}, executed by {DEALER_NAME} on {DEAL_DATE}, approved {APPROVE_DATE}, direction {BUY_SELL_CODE}",
+        "Which {DEAL_TYPE} trades did {DEALER_NAME} execute for {CUSTOMER_NAME} on {DEAL_DATE} in {CURRENCY} over {AMOUNT}, approved {APPROVE_DATE}, with {BUY_SELL_CODE}?",
+        "Get {CUSTOMER_NAME} {DEAL_TYPE} trade details for {DEAL_DATE}, approved {APPROVE_DATE}, amount {AMOUNT}, currency {CURRENCY}, dealer {DEALER_NAME}, code {BUY_SELL_CODE}",
+        "Find trades of type {DEAL_TYPE} done by {DEALER_NAME} in {CURRENCY} for {CUSTOMER_NAME} with value {AMOUNT}, deal date {DEAL_DATE}, approve date {APPROVE_DATE}, and {BUY_SELL_CODE} tag",
+        "Report on {DEAL_TYPE} trades over {AMOUNT} in {CURRENCY}, executed {DEAL_DATE}, approved {APPROVE_DATE}, for {CUSTOMER_NAME}, by dealer {DEALER_NAME} as {BUY_SELL_CODE}",
+        "Retrieve {BUY_SELL_CODE} {DEAL_TYPE} trades of {AMOUNT} {CURRENCY}, done by {DEALER_NAME} for {CUSTOMER_NAME} on {DEAL_DATE} and approved on {APPROVE_DATE}",
+        "Get trades handled by {DEALER_NAME} for {CUSTOMER_NAME} in {CURRENCY}, of type {DEAL_TYPE}, value {AMOUNT}, approved {APPROVE_DATE}, dealt on {DEAL_DATE}, side {BUY_SELL_CODE}",
+        "All {DEAL_TYPE} transactions by {DEALER_NAME}, for {CUSTOMER_NAME}, worth {AMOUNT} {CURRENCY}, executed on {DEAL_DATE}, approved on {APPROVE_DATE}, with {BUY_SELL_CODE} code",
+        "Which trades did {DEALER_NAME} conduct for {CUSTOMER_NAME} with {BUY_SELL_CODE} code in {CURRENCY} over {AMOUNT}, deal date {DEAL_DATE}, approve date {APPROVE_DATE}, of type {DEAL_TYPE}",
+        "Give a summary of {DEAL_TYPE} deals in {CURRENCY} worth {AMOUNT} for {CUSTOMER_NAME}, executed on {DEAL_DATE}, approved {APPROVE_DATE}, by {DEALER_NAME}, marked {BUY_SELL_CODE}",
+        "List deals with {BUY_SELL_CODE} flag of type {DEAL_TYPE}, amount {AMOUNT}, currency {CURRENCY}, dealer {DEALER_NAME}, customer {CUSTOMER_NAME}, deal date {DEAL_DATE}, approval {APPROVE_DATE}",
+        "Get {DEAL_TYPE} trades from {CUSTOMER_NAME} over {AMOUNT} in {CURRENCY}, executed on {DEAL_DATE}, approved on {APPROVE_DATE} by {DEALER_NAME}, marked {BUY_SELL_CODE}",
+        "Filter {DEAL_TYPE} trades for {CUSTOMER_NAME} with amount {AMOUNT} in {CURRENCY}, done by {DEALER_NAME}, with {BUY_SELL_CODE}, deal date {DEAL_DATE}, approved {APPROVE_DATE}",
+        "Fetch details of {BUY_SELL_CODE} {DEAL_TYPE} transactions by {DEALER_NAME} for {CUSTOMER_NAME}, {CURRENCY} {AMOUNT}, deal date {DEAL_DATE}, approved {APPROVE_DATE}",
+        "Get all {DEAL_TYPE} trades for {CUSTOMER_NAME}, amount {AMOUNT}, currency {CURRENCY}, executed {DEAL_DATE}, approved {APPROVE_DATE}, by {DEALER_NAME}, as {BUY_SELL_CODE}",
+        "Summarize {BUY_SELL_CODE} trades in {CURRENCY}, type {DEAL_TYPE}, value {AMOUNT}, dealer {DEALER_NAME}, customer {CUSTOMER_NAME}, date {DEAL_DATE}, approval {APPROVE_DATE}",
+        "Find {DEAL_TYPE} trades involving {CUSTOMER_NAME}, amount {AMOUNT}, currency {CURRENCY}, by dealer {DEALER_NAME}, approved {APPROVE_DATE}, dealt on {DEAL_DATE}, marked {BUY_SELL_CODE}",
+        "Which {DEAL_TYPE} deals of {AMOUNT} in {CURRENCY} were executed by {DEALER_NAME} for {CUSTOMER_NAME}, with {BUY_SELL_CODE}, approved {APPROVE_DATE}, deal date {DEAL_DATE}",
+        "List {BUY_SELL_CODE} {DEAL_TYPE} transactions in {CURRENCY} worth {AMOUNT}, by {DEALER_NAME}, for {CUSTOMER_NAME}, executed {DEAL_DATE}, approved {APPROVE_DATE}",
+        "Get all deals by {DEALER_NAME} with code {BUY_SELL_CODE}, for {CUSTOMER_NAME}, currency {CURRENCY}, type {DEAL_TYPE}, amount {AMOUNT}, dealt {DEAL_DATE}, approved {APPROVE_DATE}",
+        "Give {CUSTOMER_NAME} trade log: {DEAL_TYPE}, {AMOUNT} {CURRENCY}, {BUY_SELL_CODE}, dealer {DEALER_NAME}, deal date {DEAL_DATE}, approve date {APPROVE_DATE}"
+    ],
+    "params": {
+        "DEAL_TYPE": ["FX", "MM", "Equity", "Derivative", "Bond"],
+        "CUSTOMER_NAME": ["ABC Bank", "XYZ Corp", "Bank of America", "ING", "Deutsche Bank"],
+        "CURRENCY": ["USD", "EUR", "GBP", "JPY", "CHF", "TRY"],
+        "AMOUNT": ["100000", "250000", "500000", "750000", "1000000", "1K", "10K", "100K", "1M", "10M"],
+        "DEAL_DATE": ["2025-06-01", "2025-06-02", "yesterday", "today", "tomorrow", "next week", "2 days later", "three days later"],
+        "APPROVE_DATE": ["2025-06-03", "2025-06-04", "today", "yesterday"],
+        "DEALER_NAME": ["John Doe", "Alice Smith", "Michael Johnson", "Emma Davis", "Chris Brown"],
+        "BUY_SELL_CODE": ["BUY", "SELL", "B", "S"]
+    }
+},
+ "Query_10": {
+    "templates": [
+        "Add {CUSTOMER_NAME} to {PROFIT_CENTER} registered in {COUNTRY_CODE} with phone {PHONE_NUMBER} and email {EMAIL_ADDRESS} created on {CREATION_DATE}",
+        "Create new client {CUSTOMER_NAME} for {PROFIT_CENTER}, from {COUNTRY_CODE}, email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, date {CREATION_DATE}",
+        "Register {CUSTOMER_NAME} from {COUNTRY_CODE} to profit center {PROFIT_CENTER}, contact: {PHONE_NUMBER}, email: {EMAIL_ADDRESS}, creation: {CREATION_DATE}",
+        "Update profile of {CUSTOMER_NAME}, belonging to {PROFIT_CENTER}, residing in {COUNTRY_CODE}, phone number {PHONE_NUMBER}, email {EMAIL_ADDRESS}, since {CREATION_DATE}",
+        "Fetch details of {CUSTOMER_NAME} with profit center {PROFIT_CENTER}, country {COUNTRY_CODE}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}, joined on {CREATION_DATE}",
+        "List all customers like {CUSTOMER_NAME} created on {CREATION_DATE}, from {COUNTRY_CODE}, with {PROFIT_CENTER}, phone: {PHONE_NUMBER}, email: {EMAIL_ADDRESS}",
+        "New client {CUSTOMER_NAME} added to {PROFIT_CENTER}, lives in {COUNTRY_CODE}, phone {PHONE_NUMBER}, mail {EMAIL_ADDRESS}, created at {CREATION_DATE}",
+        "Provide contact info for {CUSTOMER_NAME} of {PROFIT_CENTER} from {COUNTRY_CODE}, number {PHONE_NUMBER}, email {EMAIL_ADDRESS}, since {CREATION_DATE}",
+        "Lookup {CUSTOMER_NAME} created {CREATION_DATE}, {PROFIT_CENTER}, phone {PHONE_NUMBER}, country {COUNTRY_CODE}, email {EMAIL_ADDRESS}",
+        "Client {CUSTOMER_NAME} from {COUNTRY_CODE} was registered to {PROFIT_CENTER} on {CREATION_DATE}, phone: {PHONE_NUMBER}, email: {EMAIL_ADDRESS}",
+        "Who is {CUSTOMER_NAME} with email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, from {COUNTRY_CODE}, under {PROFIT_CENTER}, created at {CREATION_DATE}?",
+        "Show data for customer {CUSTOMER_NAME} in {PROFIT_CENTER}, country {COUNTRY_CODE}, contact {PHONE_NUMBER}, {EMAIL_ADDRESS}, joined {CREATION_DATE}",
+        "Retrieve client {CUSTOMER_NAME} of {PROFIT_CENTER} who registered on {CREATION_DATE} from {COUNTRY_CODE}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}",
+        "List info of {CUSTOMER_NAME}, email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, profit center {PROFIT_CENTER}, country {COUNTRY_CODE}, added {CREATION_DATE}",
+        "Give client {CUSTOMER_NAME}'s contact: {EMAIL_ADDRESS}, {PHONE_NUMBER}; origin: {COUNTRY_CODE}; profit center: {PROFIT_CENTER}; joined {CREATION_DATE}",
+        "Get full profile of {CUSTOMER_NAME} under {PROFIT_CENTER}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}, nationality {COUNTRY_CODE}, created {CREATION_DATE}",
+        "Find customer {CUSTOMER_NAME}, linked to {PROFIT_CENTER}, registered on {CREATION_DATE}, email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, from {COUNTRY_CODE}",
+        "What is the creation info for {CUSTOMER_NAME} ({EMAIL_ADDRESS}, {PHONE_NUMBER}, {COUNTRY_CODE}), from {PROFIT_CENTER}, created {CREATION_DATE}?",
+        "Fetch registration for {CUSTOMER_NAME}, country {COUNTRY_CODE}, profit center {PROFIT_CENTER}, email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, created on {CREATION_DATE}",
+        "Add customer {CUSTOMER_NAME}, assign to {PROFIT_CENTER}, located in {COUNTRY_CODE}, contact {PHONE_NUMBER}, {EMAIL_ADDRESS}, start date {CREATION_DATE}",
+        "Generate profile for {CUSTOMER_NAME}: country {COUNTRY_CODE}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}, profit center {PROFIT_CENTER}, registered {CREATION_DATE}",
+        "Insert data: {CUSTOMER_NAME}, {EMAIL_ADDRESS}, {PHONE_NUMBER}, {PROFIT_CENTER}, {COUNTRY_CODE}, {CREATION_DATE}",
+        "Show me contact details of {CUSTOMER_NAME}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}, based in {COUNTRY_CODE}, under {PROFIT_CENTER}, created {CREATION_DATE}",
+        "Customer {CUSTOMER_NAME} joined {CREATION_DATE} from {COUNTRY_CODE}, contact: {PHONE_NUMBER}, {EMAIL_ADDRESS}, profit center {PROFIT_CENTER}",
+        "Print info for {CUSTOMER_NAME} (email: {EMAIL_ADDRESS}, phone: {PHONE_NUMBER}), under {PROFIT_CENTER}, from {COUNTRY_CODE}, since {CREATION_DATE}",
+        "Create a record: {CUSTOMER_NAME}, from {COUNTRY_CODE}, in {PROFIT_CENTER}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}, date {CREATION_DATE}",
+        "Contact {CUSTOMER_NAME} (phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}) from {COUNTRY_CODE}, linked to {PROFIT_CENTER}, joined on {CREATION_DATE}",
+        "Client summary: {CUSTOMER_NAME}, profit center {PROFIT_CENTER}, nationality {COUNTRY_CODE}, email {EMAIL_ADDRESS}, phone {PHONE_NUMBER}, added on {CREATION_DATE}",
+        "Who is registered on {CREATION_DATE} in {PROFIT_CENTER}? Answer: {CUSTOMER_NAME} from {COUNTRY_CODE}, phone {PHONE_NUMBER}, email {EMAIL_ADDRESS}",
+        "On {CREATION_DATE}, {CUSTOMER_NAME} from {COUNTRY_CODE} (email: {EMAIL_ADDRESS}, phone: {PHONE_NUMBER}) joined {PROFIT_CENTER}"
+    ],
+    "params": {
+        "CUSTOMER_NAME": ["Jane Doe", "Thomas Müller", "Carlos Santana", "Aiko Tanaka", "Liam O'Connor"],
+        "PROFIT_CENTER": ["EMEA Sales", "North America Ops", "LATAM Risk", "Asia Treasury", "Global Markets"],
+        "COUNTRY_CODE": ["DE", "US", "JP", "GB", "BR"],
+        "PHONE_NUMBER": ["+49 170 1234567", "+1 212 5551234", "+81 90 12345678", "+44 20 79461234", "+55 11 912345678"],
+        "EMAIL_ADDRESS": ["jane.doe@example.com", "tmueller@abc.de", "csantana@corp.com", "a.tanaka@jp.org", "liam.o@example.co.uk"],
+        "CREATION_DATE": ["2023-01-01", "2023-06-15", "2024-03-21", "yesterday", "today"]
+    }
+}
+}
