@@ -1,0 +1,146 @@
+{
+  "tables": [
+    {
+      "table_name": "TRS.DEAL_MASTER",
+      "columns": [
+        {
+          "name": "OID"
+        },
+        {
+          "name": "DEALER",
+          "business_entity": "DEALER"
+        },
+        {
+          "name": "OPERATIONDATE",
+          "business_entity": "DEAL_DATE"
+        },
+        {
+          "name": "CUSTOMEROID"
+        },
+        {
+          "name": "PRDREFNO",
+          "business_entity": "PRODUCT_REF_NO"
+        },
+        {
+          "name": "OPERATIONREFNO"
+        },
+        {
+          "name": "VALDATE",
+          "business_entity": "VALUE_DATE"
+        },
+        {
+          "name": "DEALTP",
+          "business_entity": "DEAL_TYPE"
+        },
+        {
+          "name": "APPSTATUS",
+          "business_entity": "STATUS"
+        }
+      ]
+    },
+    {
+      "table_name": "TRS.DEAL_DETAIL",
+      "columns": [
+        {
+          "name": "OID"
+        },
+        {
+          "name": "CURR",
+          "business_entity": "CURRENCY"
+        },
+        {
+          "name": "VALDATE",
+          "business_entity": "VALUE_DATE"
+        },
+        {
+          "name": "OPREFNO"
+        },
+        {
+          "name": "DEALMASTEROID"
+        },
+        {
+          "name": "ACCOID"
+        },
+        {
+          "name": "AMT",
+          "business_entity": "AMOUNT"
+        }
+      ]
+    },
+    {
+      "table_name": "CUS.CUSTOMER",
+      "columns": [
+        {
+          "name": "OID"
+        },
+        {
+          "name": "NAME",
+          "business_entity": "CUSTOMER_NAME"
+        },
+        {
+          "name": "NO"
+        },
+        {
+          "name": "FROMCOUNTRY"
+        }
+      ]
+    },
+    {
+      "table_name": "ACC.ACCOUNT",
+      "columns": [
+        {
+          "name": "OID"
+        },
+        {
+          "name": "ACCNO"
+        }
+      ]
+    },
+    {
+      "table_name": "TRS.DEALER",
+      "columns": [
+        {
+          "name": "OID"
+        },
+        {
+          "name": "USRCODE"
+        },
+        {
+          "name": "DEALERCODE"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from_table": "TRS.DEAL_MASTER",
+      "from_column": "DEALER",
+      "to_table": "TRS.DEALER",
+      "to_column": "DEALERCODE"
+    },
+    {
+      "from_table": "TRS.DEAL_MASTER",
+      "from_column": "CUSTOMEROID",
+      "to_table": "CUS.CUSTOMER",
+      "to_column": "OID"
+    },
+    {
+      "from_table": "TRS.DEAL_MASTER",
+      "from_column": "DEALTP",
+      "to_table": "x",
+      "to_column": "x"
+    },
+    {
+      "from_table": "TRS.DEAL_DETAIL",
+      "from_column": "DEALMASTEROID",
+      "to_table": "TRS.DEAL_MASTER",
+      "to_column": "OID"
+    },
+    {
+      "from_table": "TRS.DEAL_DETAIL",
+      "from_column": "ACCOID",
+      "to_table": "ACC.ACCOUNT",
+      "to_column": "OID"
+    }
+  ]
+}
